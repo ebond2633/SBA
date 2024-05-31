@@ -7,12 +7,12 @@ console.log(allArticles)
 
 allArticles.forEach(element => {
     const h1 = document.createElement("h1");
-    h1.innerHTML = "Plant Babies  "
+    h1.innerHTML = "Click Here "
 
     element.appendChild(h1)
 
 });
-
+//This is a a const to not only discribe my variable and allow me to plug into my if /else  function.
 const snaky  = {
     info: "removing toxic air pollutants. They absorb harmful substances such as formaldehyde, benzene, xylene, trichloroethylene, and toluene. Their ability to absorb and remove toxins makes them a valuable addition to your living space.",
     pics:"https://images.pexels.com/photos/9707479/pexels-photo-9707479.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -40,6 +40,7 @@ const spidey ={
         pics:"https://images.pexels.com/photos/15655064/pexels-photo-15655064/free-photo-of-close-up-of-a-houseplant.png",
         type:"Bamboo Palm"
     }
+    // added my event listener so that my function could be called.
   let snake = allArticles[0];
   let flipped = true
   snake.addEventListener("click",()=> {
@@ -99,7 +100,7 @@ flipped=true
     
   )
 
-
+// True /false function added so the I could rotate  my elements . Also emptied the card and replaced so that i could add text and returned what was removed.
   function flip(plantInfo,plant,flipped){
     if( flipped ===true){
         plant.innerHTML= ""
@@ -132,92 +133,17 @@ flipped=true
 
   }
 
+  const Subscribe = document.getElementById("form");
+  const container= document.getElementById("container")
 
 
+  Subscribe.addEventListener("submit", (e)=>{
+    e.preventDefault()
+  
+    window.open("https://www.plants.com/");
+    alert("sent you to our website")
+    Subscribe.reset()
+    console.log(Subscribe)
+  })
 
-
-  //console.log(snake)
-
-// console.log (mainEl);
-
-// //setting the background color using the VAR mconst mainEl = document .querySelector("main")
-// ethod 
-// //to grab from the root
-// mainEl.style.backgroundColor ="var(--main-bg)";
-// //creating a HTML element
-// const h1= document.createElement("H1")
-
-// //attaching text to our h1 we created.
-// h1.innerHTML="DOM manipulation";
-
-// //appending my h1 i created to my main container
-
-// mainEl.appendChild(h1);
-// //add a class name to a html element 
-// mainEl.classList.add("flex-ctr");
-
-// //part2
-
-
-// const topMenuEl = document.querySelector("#top-menu");
-// // set the height to 100%
-
-// topMenuEl.style.height="100%";
-// topMenuEl.style.backgroundColor="var(--top-menu-bg)";
-
-// topMenuEl.classList.add("flex-around");
-
-// // Menu data structure
-
- 
-
-// menuLinks.forEach(link=>{
-//     const aElement = document.createElement("a");
-//     aElement.href=link.href;
-//     aElement.textContent= link.text;
-//     topMenuEl.appendChild(aElement);
-// });
-
-// // 316.3
-
-// // const subMenuEl= document.querySelector("#sub-menu");
-// // subMenuEl.style.height = "100%";
-// // subMenuEl.style.backgroundColor="var(--sub-menu-bg)";
-// // subMenuEl,classlist.add("flex-around");
-// // subMenuEl.style.position="absolute"
-// // subMenuEl.style.top = "0";
-
-
-// // const topMenuLinks=topMenuEl.querySelectorAll("a");
-// // console.log(topMenuEl);
-
-// // topMenuEl.addEventListener("click", (event)=>{
-// //     event.preventDefault();
-// //     //console.log(event.target.tagName);
-// //     if (event.target.tagName != "A") return; 
-
-// // //topMenuLink.forEach(link=> 
-// // {
-// //     if(link===event.target){
-// //         link.classlist.toggle("active");
-    
-// //      } else {
-// //     link.classList.remove("active");
-// //      }
-
-// // });
-
-// // const linkText = event.target.textContent.toLowerCase()
-// // const linkObject= menuLinks.find((link) => link.text===linkText )
-// // if (event.target.classlist.contains("active")){
-// //     event.target.classlist.remove("active");
-// //     subMenuEl.style.top ="0";
-// // }else{
-// //     document.querySelectorAll("#top=menu a")
-// //     .foreach(a) => a.classlist.remove("active");
-// //     event.target.classlist.add("active");
-// // }
-
-// //  });
-
-
+  
