@@ -3,7 +3,7 @@
  */
 
 const allArticles = [...document.querySelectorAll("article")]
-console.log(allArticles)
+
 
 allArticles.forEach(element => {
     const h1 = document.createElement("h1");
@@ -128,7 +128,7 @@ flipped=true
  plant.append(image)
  plant.append(h2El)
 
- //console.log(image)
+ 
     }
 
   }
@@ -143,7 +143,7 @@ flipped=true
     window.open("https://www.plants.com/");
     alert("sent you to our website")
     Subscribe.reset()
-    console.log(Subscribe)
+    
   })
 
   
