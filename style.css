@@ -6,9 +6,7 @@ body {
     background-image: url("https://images.pexels.com/photos/4599906/pexels-photo-4599906.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    /* display: flex;
-    align-items: center;
-    justify-content: ceter; */
+    
     height: 100vh;
   }
   .card {
